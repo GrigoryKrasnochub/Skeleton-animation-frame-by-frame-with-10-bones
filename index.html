@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <script src="index.js"></script>
+    <script src="FileSaver.min.js"></script>
+    <meta charset="utf-8">
+    <title>PhotoHack</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+<div>
+<div>
+    <button onclick="removeFrameNumber()"><</button>
+    <span id="frameCounter">0</span>
+    <button onclick="addFrameNumber()">></button>
+</div>
+<table>
+<tr>
+    <td>
+<div style="margin: 30px 0 0 30px;">
+    <table>
+        <tr>
+     <td>1 shoulder right </td><td><input class="Input" type="number" value="30"><br></td>
+        </tr><tr>
+        <td>2 hand right</td> <td><input class="Input" type="number" value="90"><br></td>
+    </tr><tr>
+        <td>3 head </td><td><input class="Input" type="number" value="270"><br></td>
+    </tr><tr>
+        <td>4 body </td><td><input class="Input" type="number" value="90"><br></td>
+        <tr>
+        <td>5 shoulder left </td><td><input class="Input" type="number" value="140"><br></td>
+        </tr><tr>
+        <td>6 hand left </td><td><input class="Input" type="number" value="90"><br></td>
+    </tr><tr>
+        <td>7 knee right </td><td><input class="Input" type="number" value="40"><br></td>
+        </tr><tr>
+        <td>8 leg right </td><td><input class="Input" type="number" value="90"><br></td>
+        </tr><tr>
+        <td>9 knee left </td><td><input class="Input" type="number" value="140"><br></td>
+        </tr><tr>
+        <td>10 leg left </td><td><input class="Input" type="number" value="90"><br></td>
+        </tr> </table><br>
+    <button onclick="saveFrame()">Save Frames</button>
+    <button onclick="exportFrames()">Export Frames</button><br><br>
+    <input type="file" id="import" name="image"/><br>
+    <button onclick="playFrames()">Play frames</button>
+
+</div>
+    </td><td>
+<canvas style="display: inline" id='example'>Обновите браузер</canvas>
+</td>
+</tr>
+</table>
+</div>
+</body>
+
+</html>
